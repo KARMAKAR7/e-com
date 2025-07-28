@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const orderSchema = new mongoose.Schema({
     userId: {
-        type: string,
+        type: String,
         require: true
     },
     items: {
@@ -18,12 +18,12 @@ const orderSchema = new mongoose.Schema({
         require: true
     },
     ststus: {
-        type: string,
+        type: String,
         require: true,
         default: 'Order placed'
     },
     PaymentMethod: {
-        type: string,
+        type: String,
         require: true
     },
     Payment: {
